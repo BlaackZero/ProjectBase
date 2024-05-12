@@ -71,3 +71,14 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+## Prisma
+
+Para ejecutar prisma seguir estos pasos:
+- npm install prisma
+- npx prisma init (esto crea una carpeta prisma con un archivo schema.prisma)
+- configurar el archivo schema.prisma con la conexion a la db
+- npx prisma db pull (esto leera la bd al schema de prisma)
+- npm install @prisma/client (instala el cliente de prisma para utilizar en los endpoint)
+npx prisma generate (genera el schema para ser utilizado por el cliente, se utiliza cada vez que se generen cambios en el modelo de la BD)
